@@ -1,75 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pacotes</title>
+    <title>Desafio 4</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h5>SyncTur</h5>
+        <h1>SyncTur</h1>
     </header>
+
     <main>
-        <form>
-            <legend>Cadastrar Pacotes</legend>
-            <div class="form-principal">
-                <div class="esquerdo">
-                    <label>Pacotes</label>
-                    <input type="text" class="nome-pacote" placeholder="Digite o nome completo">
-                    <div class="esquerdo-baixo">
-                        <div class="box">
-                            <label  class="box-titulo">Status Pacote</label>
-                            <br>
+        <h2 class="cadastrarPacotes">Cadastrar Pacotes</h2>
+        <div class="conteudo">
+            <div class="boxStatusData">
+                <label id="txtPacote">Pacote</label>
+                <input type="text" class="nome" placeholder="Digite nome completo">
+                <div class="pacotes">
+                    <div class="statusData">
+                        <label id="txtPacote">Status do Pacote</label><br>
+                        <input type="checkbox" name="status" id="ativo" value= true>
+                        <label >Ativo</label><br>
+                        <input type="checkbox" name="status" id="inAtivo" value= false>
+                        <label >Inativo</label>
+                    </div>
 
-                            <input type="checkbox" name="Status" class="ativo">
-                            <label class="check">Ativo</label>
-                            <br>
-
-                            <input type="checkbox" name="inativo" class="inativo">
-                            <label class="check">Inativo</label>
-                        </div>
-                        <div class="box">
-                            <label  class="box-titulo">Data da viagem</label>
-                            <br>
-                            <input type="date" placeholder="data" class="data">
-                        </div>
+                    <div class="inputData">
+                        <label id="txtPacote">Data da Viagem</label><br>
+                        <input type="date" class="data" placeholder="Data">
                     </div>
                 </div>
-                <div class="direito">
-                    <label>Descrição</label>
-                    <textarea placeholder="Descrição do Pacote" class="descricao"></textarea>
-                </div>
             </div>
-            <button type="submit" class="botao-form">Cadastrar</button>
-        </form>
-        <div class="pacotes-cadastrados">
-            <div class="pacotes">
-                <section>
-                    <h4 class="titulo">Pacote X</h4>
-                    <p class="descricao-pacote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore laborum, maiores sunt delectus veritatis dolorem voluptates eius architecto atque eligendi porro similique laudantium id iusto dolores earum repellat ullam recusandae.</p>
-                    <span class="data-viagem">Data da viagem : </span>
-                    <div class="div-botao">
-                        <button class="botao-editar">Editar</button>
-                        <button class="botao-excluir">Excluir</button>
-                    </div>
-                </section>
+            <div class="descricao">
+                <label id="txtPacote1">Descrição</label>
+                <textarea class="descricaoArea" placeholder="Descrição do pacote"></textarea>
             </div>
+        </div>
+        <button type="submit" class="cadastro">Cadastrar</button>
+
+        <div class="cardAPI">
+            <!-- <div class="container">
+                <h2 class="nomeAPI">Nome do pacote </h2>
+                <p class="txtAPI">Descrição do pacote</p>
+                <p class="txtData">Data da viagem: </p>
+                <button type="submit" class="editar">Editar</button>
+                <button type="submit" class="excluir">Excluir</button>
+            </div> -->
         </div>
     </main>
+
     <footer>
         <h2>SyncTur</h2>
-        <hr>
-        <div>
-           <span>Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</span>
-           <span>Call us now toll free: (800)2345-6789</span>
-           <span>Customer support: support@demolink.org</span>
-           <span>Skype: sample-username</span> 
+        <div class="rodape">
+            <p class="txtFooter">Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</p>
+            <p class="txtFooter">Call us now toll free: (800)2345-6789</p>
+            <p class="txtFooter">Customer support: support@demolink.org</p>
+            <p class="txtFooter">Skype: sample-username</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

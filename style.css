@@ -1,310 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
 :root{
-    --laranja:#F6511D;
-    --roxo:#8458FF;
-    --amarelo:#FFC107;
-    --rosa:#DC3545;
-    --cinza-claro:#CED4DA;
-    --cinza:#ABB5BE;
+    --azulEscuro: #152536;
+    --vermelho: #DC3545;
+    --laranja: #F6511D;
+    --amarelo: #FFC107;
+    --cinza: #f8f9fa;
+    --roxo: #8458FF;
 }
+
 *{
-    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
     padding: 0;
+    margin: 0;
 }
-:hover button{
-    cursor: pointer;
-}
-header h5{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 10px;
-}
-main{
-    margin: auto;
-    max-width:1189px;;
-    display: flex;
+
+body{
+    font-family: 'Inter', sans-serif;
     flex-direction: column;
     align-items: center;
-}
-main form{
-    width: 82vw;
-    max-width: 1189px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 1440px;
+    width: 100%;
+    height: 100%;
+}
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    
+button{
+    cursor: pointer;
 }
-form legend{
-    text-align: center;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 2.5rem;
-}
-form .form-principal{
-    display: flex;
-    justify-content: space-between;
-}
-form .esquerdo{
-    max-width:589px;
-    width:41vw ;  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
-}
-.esquerdo label{
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-}
-.esquerdo .nome-pacote{
-    height:38px;
-    padding:0 5px;
-    margin: 28px 0;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 4px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: var(--cinza);
+header{
+    background-color: var(--cinza);
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
-.esquerdo-baixo{
+
+header h1{
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    width: 1190px;
 }
-.esquerdo-baixo .box{
-    justify-content: space-evenly;
-    align-content: space-between;
-    max-height: max-content;
+
+.nome{
+    width: 580;
+    height: 65px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border:2px solid #CED4DA;
 }
-.esquerdo-baixo .box .box-titulo{
-    margin-bottom: auto;
+
+.nome:hover{
+    border-color: var(--roxo);
+}
+
+.nome:focus{
+    outline: none !important;
+    border-color: var(--roxo);
+}
+
+.data{
+    width: 295px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.descricaoArea{
+    border-radius: 5px;
+    max-width: 555px;
+    min-width: 555px;
+    max-height: 165px;
+    min-height: 165px;
+    font-size: 16px;
+    border:2px solid #CED4DA;
+}
+
+.descricaoArea:hover{
+    border-color: var(--roxo);
+}
+
+.descricaoArea:focus{
+    outline: none !important;
+    border-color: var(--roxo);
+}
+
+.conteudo{
+    
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+}
+
+.boxStatusData{
  
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
-.esquerdo-baixo .box .check{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+
+#txtPacote{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#txtPacote1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.cadastrarPacotes{
+    text-align: center;
+    margin-top: 55px;
+}
+
+.pacotes{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.descricao{
+   
+    margin-left: 40px;
+}
+
+.descricao textarea{
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.inputData{
+   
+    margin-left: 0px;
+}
+
+.inputData input{
+    border:2px solid #CED4DA;
+}
+
+.inputData input:hover{
+    border-color: var(--roxo);
+}
+
+.inputData input:focus{
+    outline: none !important;
+    border-color: var(--roxo);
+}
+
+.data{
+    margin-top: 10%;
+    height: 40px;
+
+}
+
+.statusData input{
+    margin-top: 20px;
+
+}
+
+.statusData label{
     font-size: 12px;
-    line-height: 12px;
 }
-:hover .check{
-    cursor: pointer;
+
+.cadastro{
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    width: 110px;
+    height: 40px;
+    background: var(--roxo);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--roxo);
+    margin-top: 60px;
+    margin-bottom: 70px;
 }
-:hover .box input{
-    cursor: pointer;
+
+.cardAPI{
+    
+    margin-top: 25px;
+    width: 100%;
 }
-.box .ativo{
+
+.container{
+    padding: 25px 620px 50px 60px;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
     margin-top: 20px;
 }
-.box .inativo{
-    margin-top:10px
-}
-.box .data{
-    max-width: 293px;
-    width:293px ;
-    height: 38px;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 4px;
-    margin-top: 26px;
-    padding:0 5px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: var(--cinza);
-}
-:hover .data{
-    cursor: text;
-}
-
-form .direito{
-    max-width: 555px;
-    width: 38vw;
-    display: flex;
-    flex-direction: column;
-    
-}
-.direito label{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 28px;
-   
-}
-.direito textarea{
-    height: 161px;
-    padding: 2px 5px;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 4px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: var(--cinza);
-}
-
-/* botao do form */
-form button{
-    align-self: center;
-    align-items: center;
-    margin-top: 2.5rem;
-    width: 109px;
-    height: 39px;
-    background: var(--roxo);
-    border-radius: 4px;
-    border-color:var(--roxo) ;
-    color: white;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-}
-
-main .pacotes-cadastrados{
-    max-width: 1189px;
-    width: 100%;
-    margin: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
-   
-}
-.pacotes-cadastrados .pacotes{
-    min-height: 265px;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 4px;
-    display: flex;
-    align-content: center;
-    
-    
-}
-.pacotes section{
-    max-width: 508px;
-    margin-top:38px;
-    margin-left: 62px;
-    
-}
-.pacotes .titulo{
+.nomeAPI{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
-    line-height: 29px;
-    
-    margin-bottom:18px ;
 }
-.pacotes .descricao-pacote{
-    margin-bottom: 5px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--cinza);
-}
-.pacotes .data-viagem{
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-}
-.pacotes .div-botao{
-    width:174px;
-    margin: 37px 0;
-    display: flex;
-    justify-content: space-between;
 
-}
-.div-botao .botao-editar{
-    width: 78px;
-    height: 39px;
-    background: var(--amarelo);
-    border-radius: 4px;
-    box-shadow: none;
-    border:none;
-    color: white;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
+
+
+.txtAPI{
+    margin-top: 25px;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+    color:#6C757D;
 }
-.div-botao .botao-excluir{
-    width: 78px;
-    height: 39px;
-    background: var(--rosa);
-    border-radius: 4px;
-    box-shadow: none;
-    border:none;
+
+.txtData{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cardAPI button{
+    margin-top: 40px;
+}
+
+.editar{
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
     color: white;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+    background: #FFC107;
+    border: 1px solid #FFC107;
+    border-radius: 4px;
 }
+
+.excluir{
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    color: white;
+    background: #DC3545;
+    border: 1px solid #DC3545;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* FOOTER  */
 footer{
-    width: 100%;
-    height: 250px;
     background-color: var(--laranja);
-    display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
-    
-}
-footer h2{
-    margin-top: 55px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-}
-footer hr{
-    align-self: center;
-    margin: 0 30px;
-    height: 200px;
-}
-footer div{
-    align-self: center;
-    height: 147px;
     display: flex;
+    height: 250px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+footer h2{
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.txtFooter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.rodape{
+    border-left: 2px solid white;
     flex-direction: column;
-    justify-content: space-between;
-    
+    margin-left: 45px;
+    line-height: 50px;
+    display: flex;
+}
+
+.rodape p{
+    margin-left: 50px;
 }
